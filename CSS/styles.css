@@ -6,40 +6,66 @@ body {
 	font-family: 'Corben', Georgia, Times, serif;
 	position: relative;
 
-
-background: #1D2B64; /* fallback for old browsers */
-background: -webkit-linear-gradient(to left, #1D2B64 , #F8CDDA); /* Chrome 10-25, Safari 5.1-6 */
-background: linear-gradient(to left, #1D2B64 , #F8CDDA); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-        	
-
+	background: #9bc8e9; /* Old browsers */
+	background: -moz-radial-gradient(center, ellipse cover, #9bc8e9 0%, #6facd5 40%, #2b7fbb 100%); /* FF3.6-15 */
+	background: -webkit-radial-gradient(center, ellipse cover, #9bc8e9 0%,#6facd5 40%,#2b7fbb 100%); /* Chrome10-25,Safari5.1-6 */
+	background: radial-gradient(ellipse at center, #9bc8e9 0%,#6facd5 40%,#2b7fbb 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#9bc8e9', endColorstr='#2b7fbb',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
 }
+/*background: #1D2B64; /* fallback for old browsers */
+/*background: -webkit-linear-gradient(to left, #1D2B64 , #F8CDDA); /* Chrome 10-25, Safari 5.1-6 */
+/*background: linear-gradient(to left, #1D2B64 , #F8CDDA); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 
 h3,h4,p, span {
   font-family: 'Nobile', Helvetica, Arial, sans-serif;
 }
 
+div .dropdown-menu {
+	background-color: #222;
+	padding: 10px 15px;
+	/*height: 5em;*/
+	text-align: top;
+}
+
 .navbar {
 	margin-bottom: 0px;
-	padding: 10px 15px;
+	padding: 3px 15px;
 	-webkit-transition: all 0.5s;
 	transition: all 0.5s;
 }
+
+.dropdown-toggle {
+	padding: 15px 15px;
+	color: #9d9d9d;
+	background-color: #222;
+}
+
+.dropdown-toggle:visited {
+	/*color: #9d9d9d;*/
+}
+
+.nav .open>a {
+	background-color: #222 !important;
+}
+
 .navbar-left {
   color: grey;
   font-size: 2.0em;
 }
+
 .navbar-brand {
-  
   font-size: 1.2em;
 }
+
 .menu-btn{
   color: #9d9d9d;
   cursor: default;
-
 }
+
 .menu-btn:active{
   color: black;
 }
+
 .cbp-af-header-shrink {
 	padding-top: 0px;
 	padding-bottom: 0px;
@@ -50,49 +76,55 @@ h3,h4,p, span {
 	text-align: center;
 	padding-top: 50px;
 	padding-bottom: 50px;
-	
 }
 
 .topWrapper {
 	height: 100vh;
-
 }
+
 .topWrapper > .col-sm-12 {
 	margin-top: 15vh;
 }
+
 .topTitle {
   font-size: 1.5em;
-} 
+}
+
 .aboutSkillsWrapper {
   margin: 0 auto;
   margin-top: 5%;
 }
+
 .aboutSkills img {
-  width: 10%;
-  
+  max-width: 10%;
   margin: 0.5em 2em;
 }
+
 /*#arrowDown {
 	margin-top: 0px;
 }*/
+
 .aboutWrapper {
 	background-color: antiquewhite;
   height: 100vh;
-	
 }
+
 .projectWrapper {
   height: inherit;
 }
+
 .projectRecent{
   height: 100%;
 }
+
 .thumbnail {
   margin-bottom: 0px;
-
 }
+
 .col-sm-4 {
   margin-bottom: 15px;
 }
+
 .carousel-indicators {
   bottom: -15px;
 }
@@ -100,40 +132,57 @@ h3,h4,p, span {
 .contactWrapper {
 	background: antiquewhite;
   height: 100vh;
-
 }
 
 .contactRow {
   padding-top: 10%;
 }
+
 h1 {
 	transition: all 0.5s ease-in-out;
 	font-size: 5em;
   font-weight: bold;
 }
+
 h2 {
 	font-size: 2.5em;
 }
+
 /*h3 {
 	font-size: 1.5em;
 }*/
 
 a:link{
-	color: slategray;
+	/*color: slategray;*/
 	text-decoration: none;
 }
 
 a:visited{
 	color: gainsboro;
 }
+
 /*Remember, link and visited go before hover */
 a:hover {
 	color: black;
 	text-decoration: none;
 }
+
 a > i {
 	margin: 5px;
 }
+
+#arrowDown {
+	color: ivory;
+}
+
+#dropdownMenuLink a:link {
+	color: white;
+}
+
+#dropdownMenuLink:hover {
+	color: white;
+}
+
 
 /*Hover effect for projects, credit to https://miketricking.github.io/dist/ */
 .hovereffect {
@@ -155,7 +204,6 @@ a > i {
   top: 0;
   left: 0;
   padding: 50px 20px;
-
 }
 
 .hovereffect img {
@@ -197,13 +245,21 @@ a > i {
   transform: translate3d(0,0,0);
   text-decoration: none;
 }
+
 /* Project images */
 .project-img {
 	margin-bottom: 10px;
 }
+
 footer {
 	background-color: #333;
 	color: #ddd;
 	padding: 20px;
 	text-align: center;
+}
+
+@media only screen and (max-width: 750px) {
+	.aboutSkills img {
+		max-width: 15%;
+	}
 }
