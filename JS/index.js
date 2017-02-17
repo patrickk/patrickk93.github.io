@@ -1,6 +1,6 @@
 // //refresh document, scroll to top
 // $(document).ready(function(){
-//     
+//
 // });
   $(document).ready(function(){
     $(window).scrollTop(0);
@@ -23,6 +23,5 @@ $(function() {
     target: '.navbar',
     offset: 200
   });
-
+  
 });
-
