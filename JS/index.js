@@ -23,5 +23,5 @@ $(function() {
     target: '.navbar',
     offset: 200
   });
-  
+
 });

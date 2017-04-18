@@ -638,6 +638,7 @@ div .dropdown-menu {
 
 .thumbnail {
   margin-bottom: 0px;
+  
 }
 
 .col-sm-4 {
@@ -786,4 +787,13 @@ footer {
 	.aboutSkills img {
 		max-width: 15%;
 	}
+}
+
+@media only screen and (max-width: 767px) {
+  .col-xs-12 .thumbnail {
+    height: 33%;
+  }
+  .projectWrapper {
+    margin-bottom: 200%;
+  }
 }
