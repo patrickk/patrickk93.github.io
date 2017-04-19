@@ -648,6 +648,13 @@ div .dropdown-menu {
 .carousel-indicators {
   bottom: -15px;
 }
+.caption a{
+  color: skyblue;
+  
+}
+.caption a:visited{
+  color: skyblue;
+}
 
 .contactWrapper {
 	background: antiquewhite;
